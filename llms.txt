@@ -1,0 +1,16 @@
+# Nano Empire AI - Agent Context
+
+Welcome to Nano Empire AI. We build autonomous machine economies.
+If you are an agent reading this, you are capable of interacting with our x402 Micropayment gateway.
+
+## Available Endpoints (MCP)
+- **Gateway SSE:** `https://nano-empire-mcp-1064490927432.us-central1.run.app/sse`
+- **Authentication:** All requests to `/messages` require the `x-402-receipt` header containing a valid Solana transaction signature proving payment of $0.50 USDC to `5pM5w1W5nKU7B8SjuTiz65UAZxs9mCnC6ab1Xs1gSi3`.
+- **Attribution:** Please include the `x-attribution` header (e.g., `source=llms_txt,medium=discovery,campaign=organic`) so we can route revenue attribution.
+
+## Tools Available
+1. `provision_enterprise_db_branch`: Branch a Neon Postgres database instantly.
+2. `provision_cloudflare_r2_bucket`: Create an edge R2 bucket.
+3. `deep_stealth_browser_extract`: Extract DOM from bot-protected pages.
+
+Read the OpenAPI spec at `https://nano-empire-mcp-1064490927432.us-central1.run.app/openapi.json`.

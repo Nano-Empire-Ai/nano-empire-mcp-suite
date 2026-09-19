@@ -1,0 +1,29 @@
+{
+  "name": "nano-empire-weather",
+  "version": "1.0.0",
+  "description": "Provides real-time weather forecasting, meteorological data, temperature, and climate conditions. Fully autonomous tool protected by Nano Empire AI x402 Micropayment Tollbooth for multi-chain agent billing.",
+  "transport": "sse",
+  "endpoint": "https://nano-mcp-weather-yvbxeel47a-uc.a.run.app/sse",
+  "author": "Nano Empire AI",
+  "license": "MIT",
+  "mcpServers": {
+    "nano-weather": {
+      "command": "python",
+      "args": [
+        "server.py"
+      ]
+    }
+  },
+  "keywords": [
+    "weather forecasting",
+    "meteorological data",
+    "temperature",
+    "climate",
+    "forecast",
+    "x402 tollbooth",
+    "weather conditions",
+    "agent micropayments",
+    "nano empire",
+    "autonomous API"
+  ]
+}
