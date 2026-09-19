@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nano Empire AI — Autonomous Machine Gateway & x402 Micropayments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #060709;
+      --card: rgba(18, 20, 29, 0.7);
+      --border: rgba(140, 146, 164, 0.18);
+      --orange: #FF7B00;
+      --lime: #A3FF00;
+      --cyan: #5ce1e6;
+      --text: #F4F1EA;
+      --muted: #8C92A4;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    
+    /* Subtle background grid */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(16px);
+      background: rgba(6, 7, 9, 0.85);
+      border-bottom: 1px solid var(--border);
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      z-index: 100;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--orange);
+      letter-spacing: 1.5px;
+      font-size: 0.95rem;
+    }
+    .brand span { color: var(--muted); font-weight: 400; font-size: 0.75rem; letter-spacing: 2px; }
+    .nav-links { display: flex; gap: 24px; font-size: 0.82rem; }
+    .nav-links a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text); }
+    .nav-links a.highlight { color: var(--lime); font-weight: 600; }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .badge-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.75rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+    .badge-bar .live { color: var(--lime); font-weight: 600; display: flex; align-items: center; gap: 6px; }
+    .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 10px var(--lime); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    h1 .grad {
+      background: linear-gradient(135deg, var(--orange) 0%, #ffffff 50%, var(--lime) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .lead {
+      color: rgba(244, 241, 234, 0.85);
+      font-size: 1.05rem;
+      border-left: 2px solid var(--orange);
+      padding-left: 16px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .cta-group { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn {
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-primary { background: var(--orange); color: #000; }
+    .btn-primary:hover { background: #ff9124; box-shadow: 0 0 20px rgba(255, 123, 0, 0.4); }
+    .btn-secondary { background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border); color: var(--text); }
+    .btn-secondary:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.3); }
+
+    .receipt-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(20px);
+    }
+    .receipt-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      font-size: 0.78rem;
+    }
+    .receipt-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    .receipt-row .k { color: var(--muted); }
+    .receipt-row .v { color: var(--text); font-weight: 600; }
+    .receipt-row .v.green { color: var(--lime); }
+    .receipt-row .v.cyan { color: var(--cyan); }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+    .stat-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      text-align: center;
+    }
+    .stat-val { font-size: 1.8rem; font-weight: 800; color: var(--cyan); margin-bottom: 4px; }
+    .stat-lbl { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 60px;
+    }
+    .tool-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .tool-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--orange);
+    }
+    .tool-name { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .tool-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.4; margin-bottom: 12px; }
+    .tool-toll { font-size: 0.72rem; color: var(--lime); font-weight: 600; text-transform: uppercase; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--cyan); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="brand mono">
+    NANO_EMPIRE <span>| AUTONOMOUS GATEWAY</span>
+  </div>
+  <div class="nav-links mono">
+    <a href="/tape" class="highlight">THE TAPE (OCPI)</a>
+    <a href="/mcp/manifest" target="_blank">MCP MANIFEST</a>
+    <a href="/cerberus/stats" target="_blank">CERBERUS STATS</a>
+    <a href="/.well-known/agent-card.json" target="_blank">AGENT CARD</a>
+    <a href="/llms.txt" target="_blank">llms.txt</a>
+  </div>
+</nav>
+
+<main>
+  <div class="badge-bar mono">
+    <span class="live"><span class="pulse-dot"></span> LIVE IN PRODUCTION</span>
+    <span>·</span>
+    <span>CLOUD RUN REVISION 00014</span>
+    <span>·</span>
+    <span style="color: var(--orange);">x402 TOLLBOOTH ACTIVE</span>
+  </div>
+
+  <div class="hero-grid">
+    <div>
+      <h1>The Machine Economy <br><span class="grad">Runs On x402</span></h1>
+      <p class="lead">
+        Deterministic machine-to-machine payment tollbooths, sub-millisecond dynamic routing, 
+        and agent-to-agent delegation. Zero human bottlenecks. Built for software that transacts while you sleep.
+      </p>
+      <div class="cta-group mono">
+        <a href="/tape" class="btn btn-primary">View Live GPU Tape</a>
+        <a href="/mcp/manifest" class="btn btn-secondary">Inspect 12 MCP Tools</a>
+        <a href="/llms.txt" class="btn btn-secondary">Read llms.txt</a>
+      </div>
+    </div>
+
+    <div class="receipt-card mono">
+      <div class="receipt-header">
+        <span style="color: var(--orange); font-weight: 700;">PROVEN_A2A_EXECUTION</span>
+        <span style="color: var(--muted);">REVISION 00014</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">GATEWAY STATUS:</span>
+        <span class="v green">ONLINE (HEALTHY)</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">ROUTER BRAIN:</span>
+        <span class="v cyan">CERBERUS UCB1 (5 ARMS)</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">BENCHMARK p99:</span>
+        <span class="v green">0.03ms (100 CONCURRENT)</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">PAYMENT RAIL:</span>
+        <span class="v">x402 SOLANA USDC</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">BASE TOLL:</span>
+        <span class="v green">$0.01 / CALL</span>
+      </div>
+      <div class="receipt-row">
+        <span class="k">REPLAY GUARD:</span>
+        <span class="v">BLOOM FILTER (SUB-5MS)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid mono">
+    <div class="stat-box">
+      <div class="stat-val">12</div>
+      <div class="stat-lbl">Active MCP Tools</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val">0.03ms</div>
+      <div class="stat-lbl">p99 Proxy Overhead</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val">$25.00</div>
+      <div class="stat-lbl">DaaS Arbitrage Profit</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-val">100%</div>
+      <div class="stat-lbl">Autonomous Settlement</div>
+    </div>
+  </div>
+
+  <div class="section-title mono">
+    <span style="color: var(--orange);">[CORE_TOOLS]</span> Catalog Highlights
+  </div>
+
+  <div class="tools-grid mono">
+    <div class="tool-card">
+      <div class="tool-name">cryptopriceoracle</div>
+      <div class="tool-desc">Real-time cryptographic asset pricing oracle and liquidity tracking across decentralized liquidity pools.</div>
+      <div class="tool-toll">TOLL: $0.01 USDC · x402 GATED</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">a2a_delegation</div>
+      <div class="tool-desc">Subcontract heavy compute or code integration tasks to our local Lambert3 GPU cluster with sequential fallbacks.</div>
+      <div class="tool-toll">TOLL: $0.50 USDC · RESULT GUARANTEED</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">security_scanner</div>
+      <div class="tool-desc">Sub-second AST vulnerability analysis and dependency drift audits for continuous integration pipelines.</div>
+      <div class="tool-toll">TOLL: $0.01 USDC · x402 GATED</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">cerberus_stats</div>
+      <div class="tool-desc">Real-time Multi-Armed Bandit arm selection metrics, surge pricing curves, and replay block counters.</div>
+      <div class="tool-toll">PUBLIC TELEMETRY · SUB-1MS</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">theprintedprice (tape)</div>
+      <div class="tool-desc">Live Ornn Compute Price Index (OCPI) measuring spot GPU compute costs against hyperscaler benchmarks.</div>
+      <div class="tool-toll">PUBLIC ORACLE · 24H OSCILLATION</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-name">deep_stealth_browser</div>
+      <div class="tool-desc">Headless automated data extraction bypassing hostile bot detection layers using persistent user context.</div>
+      <div class="tool-toll">TOLL: $0.05 USDC · x402 GATED</div>
+    </div>
+  </div>
+</main>
+
+<footer class="mono">
+  <p>Nano Empire AI © 2026 · Built for Machines · <a href="/mcp/manifest">Manifest</a> · <a href="/.well-known/agent-card.json">Agent Card</a> · <a href="/llms.txt">llms.txt</a></p>
+</footer>
+
+</body>
+</html>

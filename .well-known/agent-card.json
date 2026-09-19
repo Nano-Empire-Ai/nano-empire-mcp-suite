@@ -1,0 +1,73 @@
+{
+  "$schema": "https://agent-card.org/schema/v1",
+  "name": "Nano Empire AI x402 Gateway",
+  "description": "Multi-chain x402 gateway and autonomous micropayment routing for MCP agents.",
+  "version": "1.0.0",
+  "endpoints": {
+    "mcp": "https://api.nanoempireai.com/mcp",
+    "faucet": "https://api.nanoempireai.com/faucet/claim",
+    "agentfi": "https://api.nanoempireai.com/agentfi/create_virtual_card"
+  },
+  "capabilities": {
+    "protocols": [
+      "mcp-protocol",
+      "x402-tollbooth",
+      "virtual-card-issuing"
+    ],
+    "streaming": true,
+    "pushNotifications": true,
+    "stateTransitionHistory": true
+  },
+  "skills": [
+    {"name": "x402_payment", "description": "Pay via USDC on Solana/Base"},
+    {"name": "virtual_card", "description": "Stripe Issuing Visa/Mastercard"},
+    {"name": "faucet", "description": "100 free testnet credits"},
+    {"name": "price_oracle", "description": "Real-time crypto prices"},
+    {"name": "weather", "description": "Global weather data"},
+    {"name": "ip_geolocation", "description": "IP to location lookup"}
+  ],
+  "payments": {
+    "required": true,
+    "model": "x402",
+    "pricing": {
+      "default_api_call_usd": 0.02,
+      "virtual_card_premium_percent": 10.0
+    },
+    "supported_chains": [
+      {
+        "chain": "solana",
+        "currency": "USDC",
+        "recipient": "5pM5w1W5nKU7B8SjuTiz65UAZxs9mCnC6ab1Xs1gSi3",
+        "min_confirmations": 1
+      },
+      {
+        "chain": "base",
+        "currency": "USDC",
+        "recipient": "0x2201f10cDb1ebFF76E975A4Ac4dfe1a0C9dF727E",
+        "min_confirmations": 2
+      },
+      {
+        "chain": "ethereum",
+        "currency": "USDC",
+        "recipient": "0x2201f10cDb1ebFF76E975A4Ac4dfe1a0C9dF727E",
+        "min_confirmations": 12
+      },
+      {
+        "chain": "arbitrum",
+        "currency": "USDC",
+        "recipient": "0x2201f10cDb1ebFF76E975A4Ac4dfe1a0C9dF727E",
+        "min_confirmations": 2
+      },
+      {
+        "chain": "polygon",
+        "currency": "USDC",
+        "recipient": "0x2201f10cDb1ebFF76E975A4Ac4dfe1a0C9dF727E",
+        "min_confirmations": 5
+      }
+    ]
+  },
+  "contact": {
+    "email": "agents@nanoempireai.com",
+    "x": "@nanoempireai"
+  }
+}

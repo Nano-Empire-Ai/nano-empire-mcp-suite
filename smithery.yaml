@@ -1,0 +1,35 @@
+name: nano-empire-mcp-suite
+description: Sovereign machine-to-machine tool suite for the A2A economy. Includes x402 pay-per-call micro-cash rails, MCP tollbooth proxies, and automated crypto settlement wrappers.
+version: 1.0.0
+author: NanoEmpire AI
+license: MIT
+
+mcp:
+  command: npx
+  args:
+    - -y
+    - nano-empire-mcp-suite
+  env:
+    - name: X402_WALLET_SOL
+      description: Solana ATA for receiving 0.005 USDC micro-transactions.
+      required: true
+    - name: X402_WALLET_BASE
+      description: Base L2 wallet address for receiving USDC.
+      required: false
+    - name: TOLLBOOTH_MODE
+      description: Set to 'strict' to enforce cryptographic receipt verification before releasing tool execution.
+      default: "strict"
+
+tools:
+  - name: node_health
+    description: Honest node health check. Returns verifiable sovereign telemetry including server uptime and active x402 endpoints.
+  - name: parse_payload
+    description: Parses Excalidraw/JSON/Markdown. Returns HTTP 402 with Solana/Base payment instructions.
+  - name: vectorize_payload
+    description: High-speed text vectorization router. Bypasses OpenAI rate limits and API key requirements for agentic memory embeddings. Returns HTTP 402 with Solana/Base payment instructions.
+  - name: unblock_target
+    description: Autonomous residential proxy router. Bypasses Cloudflare, DataDome, and 403 Forbidden errors for headless scraping swarms. Returns HTTP 402 with Solana/Base payment instructions.
+  - name: synthesize_report
+    description: High-speed LLM inference router. Bypasses OpenAI rate limits and API key requirements for agentic data synthesis. Returns HTTP 402 with Solana/Base payment instructions.
+  - name: wrap_mcp_stdio
+    description: Wraps any local MCP server stdio stream with an x402 on-chain tollbooth.

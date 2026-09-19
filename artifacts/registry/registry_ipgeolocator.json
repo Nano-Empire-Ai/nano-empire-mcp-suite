@@ -1,0 +1,28 @@
+{
+  "name": "nano-empire-ipgeolocator",
+  "version": "1.0.0",
+  "description": "High-accuracy IP geolocation, IP address lookup, and network location tracing. Fully autonomous tool protected by Nano Empire AI x402 Micropayment Tollbooth for multi-chain agent billing.",
+  "transport": "sse",
+  "endpoint": "https://nano-mcp-ipgeolocator-yvbxeel47a-uc.a.run.app/sse",
+  "author": "Nano Empire AI",
+  "license": "MIT",
+  "mcpServers": {
+    "nano-ipgeolocator": {
+      "command": "python",
+      "args": [
+        "server.py"
+      ]
+    }
+  },
+  "keywords": [
+    "IP geolocation",
+    "IP address lookup",
+    "geoip",
+    "location tracking",
+    "network tracing",
+    "x402 tollbooth",
+    "agent micropayments",
+    "nano empire",
+    "security API"
+  ]
+}

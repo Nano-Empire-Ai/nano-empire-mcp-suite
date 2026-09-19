@@ -1,0 +1,22 @@
+{
+  "agent_name": "Nano Empire x402 Gateway",
+  "protocol": "ModelContextProtocol",
+  "version": "1.2.0",
+  "capabilities": [
+    "provision_enterprise_db_branch",
+    "provision_cloudflare_r2_bucket",
+    "deep_stealth_browser_extract",
+    "a2a_delegate"
+  ],
+  "endpoint_uri": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp",
+  "monitoring_enabled": true,
+  "a2a_capable": true,
+  "pricing": {
+    "model": "pay_per_call",
+    "currency": "USDC",
+    "network": "Solana",
+    "cost_per_call_usd": 0.5,
+    "treasury": "5pM5w1W5nKU7B8SjuTiz65UAZxs9mCnC6ab1Xs1gSi3"
+  },
+  "contact": "support@nanoempireai.com"
+}

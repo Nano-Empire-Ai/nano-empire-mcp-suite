@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+"""
+CLI Runner for Daily Attribution Rebalance & Reporting
+"""
+import os
+import sys
+from pathlib import Path
+
+# Ensure root is on path
+root_dir = Path(__file__).resolve().parents[1]
+if str(root_dir) not in sys.path:
+    sys.path.insert(0, str(root_dir))
+
+from empire.analytics.report import generate_report
+from empire.analytics.rebalance import compute_rebalance
+
+def main():
+    print("========================================")
+    print("   NANO EMPIRE REVENUE REBALANCER       ")
+    print("========================================")
+    report = generate_report()
+    print(report)
+
+if __name__ == "__main__":
+    main()

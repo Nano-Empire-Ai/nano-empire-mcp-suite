@@ -1,0 +1,67 @@
+{
+  "name": "nano-empire-mcp-suite",
+  "version": "1.0.0",
+  "description": "The Nano Empire AI Master Gateway. Monetize your agentic APIs with the x402 Tollbooth protocol across Solana, Base, and Arbitrum. Autonomous machine economy micropayments.",
+  "url": "https://nano-empire-mcp-1064490927432.us-central1.run.app",
+  "manifestUrl": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp/manifest",
+  "tools": [
+    {
+      "name": "security.prompt_guard",
+      "description": "Guard against prompt injections"
+    },
+    {
+      "name": "security.document_guard",
+      "description": "Sanitize documents"
+    },
+    {
+      "name": "embeddings.verified",
+      "description": "Create verified embeddings"
+    },
+    {
+      "name": "rerank.semantic",
+      "description": "Semantically rerank documents"
+    },
+    {
+      "name": "classify.intent",
+      "description": "Classify user intent"
+    },
+    {
+      "name": "bakeoff.run",
+      "description": "Run model bakeoff"
+    },
+    {
+      "name": "provenance.verify",
+      "description": "Verify cryptographic provenance"
+    },
+    {
+      "name": "cryptopriceoracle",
+      "description": "Get crypto prices"
+    },
+    {
+      "name": "ipgeolocator",
+      "description": "Locate IP addresses"
+    },
+    {
+      "name": "publicjokegenerator",
+      "description": "Generate jokes"
+    },
+    {
+      "name": "weather",
+      "description": "Get weather data"
+    },
+    {
+      "name": "x402_gateway",
+      "description": "Process x402 payments"
+    }
+  ],
+  "keywords": [
+    "agent micropayments",
+    "x402 tollbooth",
+    "autonomous machine economy",
+    "nano empire",
+    "multi-chain payments",
+    "solana",
+    "base",
+    "API monetization"
+  ]
+}

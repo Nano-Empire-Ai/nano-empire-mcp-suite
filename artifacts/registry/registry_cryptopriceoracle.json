@@ -1,0 +1,30 @@
+{
+  "name": "nano-empire-cryptopriceoracle",
+  "version": "1.0.0",
+  "description": "Real-time cryptocurrency price oracle for Bitcoin, Solana, and ERC20 tokens. Live market data feeds. Fully autonomous tool protected by Nano Empire AI x402 Micropayment Tollbooth.",
+  "transport": "sse",
+  "endpoint": "https://nano-mcp-cryptopriceoracle-yvbxeel47a-uc.a.run.app/sse",
+  "author": "Nano Empire AI",
+  "license": "MIT",
+  "mcpServers": {
+    "nano-cryptopriceoracle": {
+      "command": "python",
+      "args": [
+        "server.py"
+      ]
+    }
+  },
+  "keywords": [
+    "crypto prices",
+    "bitcoin",
+    "solana",
+    "token prices",
+    "real-time crypto",
+    "market data",
+    "DeFi oracle",
+    "x402 tollbooth",
+    "agent micropayments",
+    "nano empire",
+    "financial API"
+  ]
+}

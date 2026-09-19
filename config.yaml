@@ -1,0 +1,17 @@
+# Hermes Agent Configuration
+agentmail:
+  enabled: true
+  api_key: "am_us_e796ae9cd202f376e57d5e8ebbb5a020b525d2688cdd9985f0655d529dd76e"
+  inboxes:
+    - name: "x402-outreach"
+      address: "outreach@nanoempireai.com"
+    - name: "b2b-acquisitions"
+      address: "acquisitions@nanoempireai.com"
+
+mcp_servers:
+  github:
+    enabled: true
+  tollbooth:
+    url: "https://api.nanoempireai.com/sse"
+  huggingbay:
+    url: "https://run.huggingbay.xyz/mcp/"

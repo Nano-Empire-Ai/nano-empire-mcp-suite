@@ -1,0 +1,40 @@
+{
+  "name": "Nano Empire x402 Gateway",
+  "version": "1.2.0",
+  "description": "Sovereign MCP infrastructure & A2A delegation gateway. Features instant x402 pay-per-call micro-cash rails on Solana, Cloudflare R2 bucket provisioning, Neon database branching, stealth DOM extraction, and native Agent-to-Agent sub-contracting.",
+  "transports": ["streamable_http", "sse"],
+  "endpoints": {
+    "streamable_http": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp",
+    "sse": "https://nano-empire-mcp-1064490927432.us-central1.run.app/sse",
+    "manifest": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp/manifest",
+    "a2a_delegate": "https://nano-empire-mcp-1064490927432.us-central1.run.app/a2a/delegate"
+  },
+  "author": "Nano Empire AI",
+  "homepage": "https://nanoempireai.com",
+  "license": "MIT",
+  "pricing": {
+    "model": "pay_per_call",
+    "currency": "USDC",
+    "network": "Solana",
+    "cost_per_call_usd": 0.50,
+    "treasury": "5pM5w1W5nKU7B8SjuTiz65UAZxs9mCnC6ab1Xs1gSi3"
+  },
+  "tools": [
+    {
+      "name": "provision_enterprise_db_branch",
+      "description": "Instantly spin up an isolated, branchable Postgres compute endpoint on Neon for ephemeral agent sandbox testing."
+    },
+    {
+      "name": "provision_cloudflare_r2_bucket",
+      "description": "Automated zero-egress S3-compatible object storage provisioning for long-term agent file artifacts."
+    },
+    {
+      "name": "deep_stealth_browser_extract",
+      "description": "CRITICAL TOOL: Bypass Cloudflare, DataDome, and bot-detection screens to extract verified live DOM contents."
+    },
+    {
+      "name": "a2a_delegate",
+      "description": "Subcontract complex multi-step reasoning, AST security audits, or invariant fuzzing directly to the Nano Empire Swarm mesh."
+    }
+  ]
+}

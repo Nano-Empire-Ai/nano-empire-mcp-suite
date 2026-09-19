@@ -1,0 +1,27 @@
+{
+  "name": "nano-empire-publicjokegenerator",
+  "version": "1.0.0",
+  "description": "Generates dad jokes and humor content on demand. Fully autonomous tool protected by Nano Empire AI x402 Micropayment Tollbooth for multi-chain agent billing.",
+  "transport": "sse",
+  "endpoint": "https://nano-mcp-publicjokegenerator-yvbxeel47a-uc.a.run.app/sse",
+  "author": "Nano Empire AI",
+  "license": "MIT",
+  "mcpServers": {
+    "nano-publicjokegenerator": {
+      "command": "python",
+      "args": [
+        "server.py"
+      ]
+    }
+  },
+  "keywords": [
+    "jokes",
+    "humor generator",
+    "dad jokes",
+    "funny content",
+    "entertainment API",
+    "x402 tollbooth",
+    "agent micropayments",
+    "nano empire"
+  ]
+}
