@@ -306,3 +306,21 @@ class CerberusRouter:
 
 # Module-level singleton — import this in x402_gateway.py
 cerberus = CerberusRouter()
+
+
+class DetectionFirstSlashing:
+    """
+    Ω-1 Informed Redesign: Slashing only triggers when detection_probability >= min_detection_prob.
+    Slash fraction is mathematically derived as min(1.0, required_penalty / detection_probability).
+    """
+    def __init__(self, min_detection_prob: float = 0.95):
+        self.min_detection_prob = min_detection_prob
+
+    def calculate_slash(self, offense_severity: float, detection_prob: float) -> float:
+        if detection_prob < self.min_detection_prob:
+            return 0.0  # NO SLASHING - insufficient detection confidence
+        return min(1.0, offense_severity / detection_prob)
+
+    def should_slash(self, detection_prob: float) -> bool:
+        return detection_prob >= self.min_detection_prob
+
