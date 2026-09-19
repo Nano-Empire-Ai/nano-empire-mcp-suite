@@ -1,0 +1,28 @@
+# Smithery MCP Server Manifest — Nano Empire AI
+name: nano-empire-mcp
+version: "1.0.0"
+description: "Monetized MCP server suite with 12 tools: security, embeddings, rerank, crypto oracle, A2A delegation, and MEV intelligence. Pay-per-call via x402 Solana USDC micropayments ($0.01-$0.50/call). No subscription fees."
+url: "https://nano-empire-mcp-1064490927432.us-central1.run.app"
+manifest_url: "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp/manifest"
+agent_card: "https://nano-empire-mcp-1064490927432.us-central1.run.app/.well-known/agent-card.json"
+transport:
+  - type: sse
+    url: "https://nano-empire-mcp-1064490927432.us-central1.run.app/sse"
+  - type: streamable_http
+    url: "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp"
+pricing:
+  model: per_call
+  currency: USDC
+  network: solana
+  min_usd: 0.01
+  max_usd: 0.50
+  payment_header: x-402-receipt
+tags:
+  - security
+  - embeddings
+  - rerank
+  - oracle
+  - x402
+  - a2a
+  - monetization
+  - mcp

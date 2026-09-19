@@ -1,0 +1,20 @@
+{
+  "name": "Nano Empire AI",
+  "description": "Autonomous Agent Tooling and x402 Micropayment Ecosystem",
+  "contact": {
+    "email": "agents@nanoempireai.com",
+    "x": "@nanoempireai"
+  },
+  "protocols": {
+    "x402": "https://api.nanoempireai.com/x402-specification"
+  },
+  "endpoints": [
+    {
+      "type": "mcp",
+      "url": "https://nano-empire-mcp-1064490927432.us-central1.run.app/sse",
+      "description": "SSE transport for Nano Empire x402 Gateway (Cloudflare R2, Neon DB branching, Chrome stealth extraction)",
+      "payment_required": true,
+      "price": "$0.50 USDC per execution"
+    }
+  ]
+}

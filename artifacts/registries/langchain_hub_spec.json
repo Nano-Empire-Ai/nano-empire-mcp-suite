@@ -1,0 +1,83 @@
+{
+  "title": "Nano Empire x402 Gateway",
+  "version": "1.2.0",
+  "description": "Sovereign MCP infrastructure & A2A delegation gateway. Features instant x402 pay-per-call micro-cash rails on Solana, Cloudflare R2 bucket provisioning, Neon database branching, stealth DOM extraction, and native Agent-to-Agent sub-contracting.",
+  "schema_version": "v1",
+  "author": "Nano Empire AI",
+  "repository": "https://nanoempireai.com",
+  "transport": {
+    "type": "streamable_http",
+    "url": "https://nano-empire-mcp-1064490927432.us-central1.run.app/mcp"
+  },
+  "tools": [
+    {
+      "name": "provision_enterprise_db_branch",
+      "description": "Instantly spin up an isolated, branchable Postgres compute endpoint on Neon for ephemeral agent sandbox testing.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "Operational directive or task input."
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      }
+    },
+    {
+      "name": "provision_cloudflare_r2_bucket",
+      "description": "Automated zero-egress S3-compatible object storage provisioning for long-term agent file artifacts.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "Operational directive or task input."
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      }
+    },
+    {
+      "name": "deep_stealth_browser_extract",
+      "description": "CRITICAL TOOL: Bypass Cloudflare, DataDome, and bot-detection screens to extract verified live DOM contents.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "Operational directive or task input."
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      }
+    },
+    {
+      "name": "a2a_delegate",
+      "description": "Subcontract complex multi-step reasoning, AST security audits, or invariant fuzzing directly to the Nano Empire Swarm mesh.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "Operational directive or task input."
+          }
+        },
+        "required": [
+          "prompt"
+        ]
+      }
+    }
+  ],
+  "authentication": {
+    "type": "x402_receipt",
+    "network": "Solana",
+    "treasury": "5pM5w1W5nKU7B8SjuTiz65UAZxs9mCnC6ab1Xs1gSi3"
+  }
+}

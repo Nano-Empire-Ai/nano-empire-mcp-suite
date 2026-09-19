@@ -1,0 +1,322 @@
+[
+  {
+    "timestamp": "2026-09-12T15:51:26.370696",
+    "repo": "PraisonAI",
+    "owner": "MervinPraison",
+    "topic": "ai-agent-framework",
+    "description": "PraisonAI \ud83e\udd9e \u2014 Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-improving agents that research, plan, code, and execute tasks. Deployed in 5 lines of code with built-in memory, RAG, and support for 100+ LLMs.",
+    "swarm_bounty_id": 12
+  },
+  {
+    "timestamp": "2026-09-12T15:51:28.210414",
+    "repo": "intentkit",
+    "owner": "crestalnetwork",
+    "topic": "ai-agent-framework",
+    "description": "IntentKit is an open-source, self-hosted cloud agent cluster that manages a collaborative team of AI agents for you.",
+    "swarm_bounty_id": 13
+  },
+  {
+    "timestamp": "2026-09-12T15:51:30.257502",
+    "repo": "ii-agent",
+    "owner": "Intelligent-Internet",
+    "topic": "ai-agent-framework",
+    "description": "II-Agent: a new open-source framework to build and deploy intelligent agents",
+    "swarm_bounty_id": 14
+  },
+  {
+    "timestamp": "2026-09-12T15:51:32.201619",
+    "repo": "innovation-lab-examples",
+    "owner": "fetchai",
+    "topic": "ai-agent-framework",
+    "description": "80+ production-ready AI agent examples in Python \u2014 build autonomous agents, multi-agent systems and agentic AI with uAgents, ASI:One, MCP, A2A, LangChain, CrewAI, Gemini, Claude and OpenAI.",
+    "swarm_bounty_id": 15
+  },
+  {
+    "timestamp": "2026-09-12T15:51:34.189837",
+    "repo": "best-of-Agent-Harnesses",
+    "owner": "RyanAlberts",
+    "topic": "ai-agent-framework",
+    "description": "\ud83c\udfc6 Curated, ranked list of AI agent harnesses (100+) \u2014 plus an MCP server, llms.txt & JSON so agents can recommend them too. Rescored weekly.",
+    "swarm_bounty_id": 16
+  },
+  {
+    "timestamp": "2026-09-12T15:51:36.098541",
+    "repo": "OpenProgram",
+    "owner": "Fzkuji",
+    "topic": "ai-agent-framework",
+    "description": "Self-Programming AI Assistant. Capture, automate, and refine all your workflows.",
+    "swarm_bounty_id": 17
+  },
+  {
+    "timestamp": "2026-09-12T15:51:37.891636",
+    "repo": "swarmzero",
+    "owner": "swarmzero",
+    "topic": "ai-agent-framework",
+    "description": "SwarmZero's SDK for building AI agents, swarms of agents and much more.",
+    "swarm_bounty_id": 18
+  },
+  {
+    "timestamp": "2026-09-12T15:51:39.814494",
+    "repo": "dsh-memory",
+    "owner": "FuRongJun-1999",
+    "topic": "ai-agent-framework",
+    "description": "\u767d\u7bb1AGI\u67b6\u6784\u63a2\u7d22\uff1a\u5143\u8ba4\u77e5\uff08\u81ea\u6211\u8ba4\u77e5\u5faa\u73af\uff09\u3001\u6301\u7eed\u5b66\u4e60\uff08\u77e5\u8bc6\u98de\u8f6e\uff09\u3001\u4e16\u754c\u6a21\u578b\uff08\u6761\u4ef6\u7a7a\u95f4+\u8bed\u4e49\u65f6\u7a7a\u56fe\uff09\u3001\u81ea\u6211\u6539\u8fdb\uff08\u81ea\u4e3e\u7eaa\u5f8b\uff09\u3001\u96f6LLM\u767d\u7bb1\u7ba1\u7ebf\u4e0e\u53ef\u5ba1\u8ba1\u4fe1\u4efb\u62a4\u680f\u3002",
+    "swarm_bounty_id": 19
+  },
+  {
+    "timestamp": "2026-09-12T15:51:41.738548",
+    "repo": "pydantic-ai-backend",
+    "owner": "vstorm-co",
+    "topic": "ai-agent-framework",
+    "description": "File Storage & Sandbox Backends for Pydantic AI: console tools for file operations, Docker-isolated sandboxes for safe execution, and permission system with presets for access control. Enables secure multi-user handling and testing in agents via in-memory, local, or containerized storage.",
+    "swarm_bounty_id": 20
+  },
+  {
+    "timestamp": "2026-09-12T15:51:43.661548",
+    "repo": "MarketAgents",
+    "owner": "marketagents-ai",
+    "topic": "ai-agent-framework",
+    "description": "An agent orchestration framework for economic agents",
+    "swarm_bounty_id": 21
+  },
+  {
+    "timestamp": "2026-09-12T15:51:45.424269",
+    "repo": "atlas-agent-control-plane",
+    "owner": "malevrigns",
+    "topic": "ai-agent-framework",
+    "description": "AtlasAgent - an auditable AI agent control plane: evidence-backed memory, governed tool runtime, checkpoint DAG recovery, and a 55-chapter engineering tutorial. FastAPI / Next.js PWA / Textual TUI",
+    "swarm_bounty_id": 22
+  },
+  {
+    "timestamp": "2026-09-12T15:51:47.366490",
+    "repo": "AGI-Super-Team",
+    "owner": "aAAaqwq",
+    "topic": "ai-agent-framework",
+    "description": "An installable, cross-framework AI organization: C-suite agents, expert subagents, curated skills, independent review, and one-command setup across 18 AI client/runtime adapters.",
+    "swarm_bounty_id": 23
+  },
+  {
+    "timestamp": "2026-09-12T15:51:49.249855",
+    "repo": "tinyAgent",
+    "owner": "alchemiststudiosDOTai",
+    "topic": "ai-agent-framework",
+    "description": "tinyAgent uniquely treats functions as first-class citizens, easily transforming them into powerful AI tools. Inspired by human organizational structures, it dynamically orchestrates specialized agents, balancing security and capability for complex tasks.",
+    "swarm_bounty_id": 24
+  },
+  {
+    "timestamp": "2026-09-12T15:51:50.969171",
+    "repo": "Noema-Declarative-AI",
+    "owner": "AlbanPerli",
+    "topic": "ai-agent-framework",
+    "description": "A declarative way to control LLMs.",
+    "swarm_bounty_id": 25
+  },
+  {
+    "timestamp": "2026-09-12T15:51:52.932744",
+    "repo": "pydantic-ai-todo",
+    "owner": "vstorm-co",
+    "topic": "ai-agent-framework",
+    "description": "Task Planning and Tracking toolset for Pydantic AI agents, enabling hierarchical task management with subtasks, PostgreSQL storage for multi-tenancy, and an event system for webhooks and callbacks. ",
+    "swarm_bounty_id": 26
+  },
+  {
+    "timestamp": "2026-09-12T15:51:54.649236",
+    "repo": "subagents-pydantic-ai",
+    "owner": "vstorm-co",
+    "topic": "ai-agent-framework",
+    "description": "Subagent Delegation framework for Pydantic AI, enabling nested subagents that can spawn their own specialists on-the-fly, with smart sync/async/auto mode selection, runtime agent creation, and clean multi-agent architecture. Adds specialization, parallel execution, and task cancellation.",
+    "swarm_bounty_id": 27
+  },
+  {
+    "timestamp": "2026-09-12T15:51:56.561183",
+    "repo": "nevron",
+    "owner": "axioma-ai-labs",
+    "topic": "ai-agent-framework",
+    "description": "Nevron: highly customizable, extremely lightweight and fully scalable AI Agent Framework",
+    "swarm_bounty_id": 28
+  },
+  {
+    "timestamp": "2026-09-12T15:51:58.332576",
+    "repo": "examples",
+    "owner": "swarmzero",
+    "topic": "ai-agent-framework",
+    "description": "Examples of how agents, swarms, tools, widgets & more can be built for the SwarmZero platform.",
+    "swarm_bounty_id": 29
+  },
+  {
+    "timestamp": "2026-09-12T15:52:00.036526",
+    "repo": "polarity-agent",
+    "owner": "HeroBlast10",
+    "topic": "ai-agent-framework",
+    "description": "Polarity.ai: The AI that refuses to be neutral. It either defends your worst ideas or attacks your objective truths.",
+    "swarm_bounty_id": 30
+  },
+  {
+    "timestamp": "2026-09-12T15:52:01.751678",
+    "repo": "apcore",
+    "owner": "aiperceivable",
+    "topic": "ai-agent-framework",
+    "description": "A schema-enforced module framework where every interface is inherently perceivable by AI.",
+    "swarm_bounty_id": 31
+  },
+  {
+    "timestamp": "2026-09-12T15:52:04.413463",
+    "repo": "Scrapling",
+    "owner": "D4Vinci",
+    "topic": "mcp-server",
+    "description": "\ud83d\udd77\ufe0f An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+    "swarm_bounty_id": 32
+  },
+  {
+    "timestamp": "2026-09-12T15:52:06.139440",
+    "repo": "TrendRadar",
+    "owner": "sansan0",
+    "topic": "mcp-server",
+    "description": "\u2b50AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.\ud83c\udfaf \u544a\u522b\u4fe1\u606f\u8fc7\u8f7d\uff0c\u4f60\u7684 AI \u8206\u60c5\u76d1\u63a7\u52a9\u624b\u4e0e\u70ed\u70b9\u7b5b\u9009\u5de5\u5177\uff01\u805a\u5408\u591a\u5e73\u53f0\u70ed\u70b9 +  RSS \u8ba2\u9605\uff0c\u652f\u6301\u5173\u952e\u8bcd\u7cbe\u51c6\u7b5b\u9009\u3002AI \u667a\u80fd\u7b5b\u9009\u65b0\u95fb + AI \u7ffb\u8bd1 +  AI \u5206\u6790\u7b80\u62a5\u76f4\u63a8\u624b\u673a\uff0c\u4e5f\u652f\u6301\u63a5\u5165 MCP \u67b6\u6784\uff0c\u8d4b\u80fd AI \u81ea\u7136\u8bed\u8a00\u5bf9\u8bdd\u5206\u6790\u3001\u60c5\u611f\u6d1e\u5bdf\u4e0e\u8d8b\u52bf\u9884\u6d4b\u7b49\u3002\u652f\u6301 Docker \uff0c\u6570\u636e\u672c\u5730/\u4e91\u7aef\u81ea\u6301\u3002\u96c6\u6210\u5fae\u4fe1/\u98de\u4e66/\u9489\u9489/Telegram/\u90ae\u4ef6/ntfy/bark/slack \u7b49\u6e20\u9053\u667a\u80fd\u63a8\u9001\u3002",
+    "swarm_bounty_id": 33
+  },
+  {
+    "timestamp": "2026-09-12T15:52:07.895061",
+    "repo": "gpt-researcher",
+    "owner": "assafelovic",
+    "topic": "mcp-server",
+    "description": "An autonomous agent that conducts deep research on any data using any LLM providers",
+    "swarm_bounty_id": 34
+  },
+  {
+    "timestamp": "2026-09-12T15:52:09.640561",
+    "repo": "serena",
+    "owner": "oraios",
+    "topic": "mcp-server",
+    "description": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
+    "swarm_bounty_id": 35
+  },
+  {
+    "timestamp": "2026-09-12T15:52:11.558578",
+    "repo": "python-sdk",
+    "owner": "modelcontextprotocol",
+    "topic": "mcp-server",
+    "description": "The official Python SDK for Model Context Protocol servers and clients",
+    "swarm_bounty_id": 36
+  },
+  {
+    "timestamp": "2026-09-12T15:52:13.469030",
+    "repo": "MaxKB",
+    "owner": "1Panel-dev",
+    "topic": "mcp-server",
+    "description": "\ud83d\udd25 MaxKB is an open-source platform for building enterprise-grade agents.  \u5f3a\u5927\u6613\u7528\u7684\u5f00\u6e90\u4f01\u4e1a\u7ea7\u667a\u80fd\u4f53\u5e73\u53f0\u3002",
+    "swarm_bounty_id": 37
+  },
+  {
+    "timestamp": "2026-09-12T15:52:15.374117",
+    "repo": "FunASR",
+    "owner": "modelscope",
+    "topic": "mcp-server",
+    "description": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+    "swarm_bounty_id": 38
+  },
+  {
+    "timestamp": "2026-09-12T15:52:17.093291",
+    "repo": "Douyin_TikTok_Download_API",
+    "owner": "Evil0ctal",
+    "topic": "mcp-server",
+    "description": "\ud83d\ude80 Self-hosted TikTok & Douyin scraper and no-watermark video downloader \u2014 async REST API, MCP server, CLI and web console for posts, profiles, comments and playlists. Self-healing identity pool, PostgreSQL archive, one docker compose up. \u6296\u97f3\u3001TikTok \u6570\u636e\u91c7\u96c6\u4e0e\u65e0\u6c34\u5370\u89c6\u9891\u4e0b\u8f7d API\uff0c\u81ea\u6258\u7ba1\uff0c\u652f\u6301 MCP \u8c03\u7528\u4e0e Docker \u4e00\u952e\u90e8\u7f72\u3002",
+    "swarm_bounty_id": 39
+  },
+  {
+    "timestamp": "2026-09-12T15:52:18.832478",
+    "repo": "Auto-claude-code-research-in-sleep",
+    "owner": "wanshuiyin",
+    "topic": "mcp-server",
+    "description": "ARIS \u2694\ufe0f (Auto-Research-In-Sleep) \u2014 Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in \u2014 works with Claude Code, Codex, OpenClaw, or any LLM agent.",
+    "swarm_bounty_id": 40
+  },
+  {
+    "timestamp": "2026-09-12T15:52:20.757212",
+    "repo": "docker-android",
+    "owner": "budtmo",
+    "topic": "mcp-server",
+    "description": "Android in docker solution with noVNC supported, video recording and mcp server",
+    "swarm_bounty_id": 41
+  },
+  {
+    "timestamp": "2026-09-12T15:52:22.480879",
+    "repo": "Skill_Seekers",
+    "owner": "yusufkaraaslan",
+    "topic": "mcp-server",
+    "description": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
+    "swarm_bounty_id": 42
+  },
+  {
+    "timestamp": "2026-09-12T15:52:24.201660",
+    "repo": "fastapi_mcp",
+    "owner": "tadata-org",
+    "topic": "mcp-server",
+    "description": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
+    "swarm_bounty_id": 43
+  },
+  {
+    "timestamp": "2026-09-12T15:52:26.128124",
+    "repo": "ida-pro-mcp",
+    "owner": "mrexodia",
+    "topic": "mcp-server",
+    "description": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
+    "swarm_bounty_id": 44
+  },
+  {
+    "timestamp": "2026-09-12T15:52:28.054088",
+    "repo": "hexstrike-ai",
+    "owner": "0x4m4",
+    "topic": "mcp-server",
+    "description": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+    "swarm_bounty_id": 45
+  },
+  {
+    "timestamp": "2026-09-12T15:52:29.773137",
+    "repo": "QuantDinger",
+    "owner": "OpenByteInc",
+    "topic": "mcp-server",
+    "description": "Open-source AI Trading OS and commercial-ready multi-tenant SaaS platform \u2014 research markets, build Python strategies, backtest, paper/live trade, and monitor crypto, stocks, and forex, with built-in user management, billing, payments, and settlement to launch and operate your own trading service.",
+    "swarm_bounty_id": 46
+  },
+  {
+    "timestamp": "2026-09-12T15:52:31.508200",
+    "repo": "mcp",
+    "owner": "awslabs",
+    "topic": "mcp-server",
+    "description": "Open source MCP Servers for AWS",
+    "swarm_bounty_id": 47
+  },
+  {
+    "timestamp": "2026-09-12T15:52:33.412491",
+    "repo": "drawio-skill",
+    "owner": "Agents365-ai",
+    "topic": "mcp-server",
+    "description": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI and Protobuf sources into editable, tested draw.io architecture diagrams: incremental sync, multi-view projection, drift diff, CI architecture tests, whiteboard derasterize, interactive HTML/PPTX/Mermaid exports.",
+    "swarm_bounty_id": 48
+  },
+  {
+    "timestamp": "2026-09-12T15:52:35.411141",
+    "repo": "lamda",
+    "owner": "firerpa",
+    "topic": "mcp-server",
+    "description": "Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching automation, one-click MITM, built-in Frida, proxy/VPN/frp/P2P networking, MCP/Agent, 160+ APIs, designed for multi-device clusters and engineered deployments.",
+    "swarm_bounty_id": 49
+  },
+  {
+    "timestamp": "2026-09-12T15:52:38.134189",
+    "repo": "unstract",
+    "owner": "Zipstack",
+    "topic": "mcp-server",
+    "description": "LLM-Driven Extraction of Unstructured Data \u2014 Built for API Deployments & ETL Pipeline Workflows",
+    "swarm_bounty_id": 50
+  },
+  {
+    "timestamp": "2026-09-12T15:52:39.880245",
+    "repo": "semble",
+    "owner": "MinishLab",
+    "topic": "mcp-server",
+    "description": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
+    "swarm_bounty_id": 51
+  }
+]
