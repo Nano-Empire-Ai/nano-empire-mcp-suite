@@ -19,12 +19,30 @@
     "stateTransitionHistory": true
   },
   "skills": [
-    {"name": "x402_payment", "description": "Pay via USDC on Solana/Base"},
-    {"name": "virtual_card", "description": "Stripe Issuing Visa/Mastercard"},
-    {"name": "faucet", "description": "100 free testnet credits"},
-    {"name": "price_oracle", "description": "Real-time crypto prices"},
-    {"name": "weather", "description": "Global weather data"},
-    {"name": "ip_geolocation", "description": "IP to location lookup"}
+    {
+      "name": "x402_payment",
+      "description": "Pay via USDC on Solana/Base"
+    },
+    {
+      "name": "virtual_card",
+      "description": "Stripe Issuing Visa/Mastercard"
+    },
+    {
+      "name": "faucet",
+      "description": "100 free testnet credits"
+    },
+    {
+      "name": "price_oracle",
+      "description": "Real-time crypto prices"
+    },
+    {
+      "name": "weather",
+      "description": "Global weather data"
+    },
+    {
+      "name": "ip_geolocation",
+      "description": "IP to location lookup"
+    }
   ],
   "payments": {
     "required": true,
@@ -69,5 +87,16 @@
   "contact": {
     "email": "agents@nanoempireai.com",
     "x": "@nanoempireai"
-  }
+  },
+  "settlement_addresses": {
+    "BTC": "bc1pnh9ujjmk55as3uxrmj5utctjyar325zt3lxgn2mpdxh8l0d90jrqafw5ag"
+  },
+  "payment_protocols": [
+    "L402",
+    "x402"
+  ],
+  "accepted_currencies": [
+    "USDC",
+    "BTC_LN"
+  ]
 }
