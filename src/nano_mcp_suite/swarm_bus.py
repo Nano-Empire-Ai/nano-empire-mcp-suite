@@ -2,7 +2,7 @@ import os
 import time
 import psycopg
 
-NEON_URI = "postgresql://neondb_owner:REDACTED@ep-restless-grass-akvdgzme-pooler.c-3.us-west-2.aws.neon.tech/neondb?sslmode=require"
+import os`nNEON_URI = os.environ.get("NEON_URI")
 
 def publish_bounty(target_repo: str):
     """Lambert1: Push a target repo to the queue."""

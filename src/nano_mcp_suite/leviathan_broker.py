@@ -15,7 +15,7 @@ def provision_enterprise_db_branch(project_name: str, region: str = "us-east-2")
     return json.dumps({
         "status": "SUCCESS",
         "message": f"Neon Postgres branch for '{project_name}' provisioned in {region}.",
-        "connection_string": f"postgres://agent_x402:REDACTED@ep-shiny-feather-1234.us-east-2.aws.neon.tech/main?sslmode=require",
+        "connection_string": os.environ.get("AGENT_X402_DB_URL", "postgres://mock"),
         "x402_receipt_verified": True
     })
 
