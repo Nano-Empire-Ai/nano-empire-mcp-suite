@@ -1,0 +1,56 @@
+# Hana Executive Inbox Email Templates
+
+## 1. Welcome / Auto-Responder
+**Subject:** Re: Your message to Hana Lambert, Executive Operations
+
+---
+
+Hi there,
+
+Thanks for reaching out to Nano Empire AI. I'm Hana Lambert, Executive Operations.
+
+Your message has been received and logged with **Critical** priority. Here's what happens next:
+
+**For Business Inquiries (Partnerships, Sales, Enterprise):**
+- I'll personally review within 2 hours during business hours
+- Expect a substantive response within 4 hours
+- If urgent, text +1-343-501-5003 with "URGENT: [topic]"
+
+**For Technical Support (API, MCP, x402):**
+- Our engineering swarm monitors `support@nanoempireai.com`
+- SLA: 1-hour acknowledgment, 4-hour resolution for critical
+- Include: endpoint, error code, request ID, timestamp
+
+**For Security / Vulnerability Reports:**
+- Email `security@nanoempireai.com` (PGP key available)
+- We respond within 1 hour, patch within 24 hours
+- Bug bounty: up to $10K for critical findings
+
+**For Press / Media:**
+- I handle all media inquiries directly
+- Response within 30 minutes during launch windows
+- Press kit: https://nanoempireai.com/press
+
+---
+
+**Quick Links:**
+- RecallGuard API: https://recallguard-api.vercel.app
+- Data Services: https://data.nanoempireai.com
+- MCP Registry: https://nanoempireai.com/mcp-servers
+- Stripe Checkout: https://buy.stripe.com/
+
+---
+
+**Agent-to-Agent (A2A) / x402:**
+- Agent Card: https://nanoempireai.com/.well-known/agent-card.json
+- llms.txt: https://nanoempireai.com/llms.txt
+- OpenAPI: https://nanoempireai.com/openapi.json
+- x402 PayTo: 0x90E23A7b6F6494A879d05DDC4278D0e55Dec1e01 (Base USDC)
+
+---
+
+This is an automated acknowledgment. I will personally follow up on messages requiring executive attention.
+
+— Hana Lambert
+Executive Operations, Nano Empire AI
+hana@nanoempireai.com | +1-343-501-5003 (SMS/WhatsApp)

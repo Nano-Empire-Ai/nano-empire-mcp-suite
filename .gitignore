@@ -1,1 +1,9 @@
 .env
+*.env
+.venv/
+__pycache__/
+*.pyc
+agentmail_config.json
+agentmail_outbox/
+src/nano_mcp_suite/agentmail_outbox/
+run_scrub.py
