@@ -9,3 +9,11 @@ src/nano_mcp_suite/agentmail_outbox/
 run_scrub.py
 
 .vercel
+
+hermes_moonshot_directives.md
+scratch/
+*.db
+agentmail_outbox/
+agentmail_config.json
+run_scrub.py
+
